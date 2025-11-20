@@ -1,7 +1,7 @@
 # Pollinations AI MCP Server
 
-[![smithery badge](https://smithery.ai/badge/@pollinations/mcp-server)](https://smithery.ai/server/@pollinations/mcp-server)
-[![npm version](https://badge.fury.io/js/%40pollinations%2Fmcp-server.svg)](https://www.npmjs.com/package/@pollinations/mcp-server)
+[![smithery badge](https://smithery.ai/badge/@lenylvt/pollinations-mcp)](https://smithery.ai/server/@lenylvt/pollinations-mcp)
+[![npm version](https://badge.fury.io/js/%40lenylvt%2Fpollinations-mcp.svg)](https://www.npmjs.com/package/@lenylvt/pollinations-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
@@ -21,7 +21,7 @@ A Model Context Protocol (MCP) server that provides access to [Pollinations AI](
 ### Install with Smithery
 
 ```bash
-npx @smithery/cli install @pollinations/mcp-server --client claude
+npx @smithery/cli install @lenylvt/pollinations-mcp --client claude
 ```
 
 ### Manual Setup for Claude Desktop
@@ -33,7 +33,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "pollinations": {
       "command": "npx",
-      "args": ["-y", "@pollinations/mcp-server"]
+      "args": ["-y", "@lenylvt/pollinations-mcp"]
     }
   }
 }

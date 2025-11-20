@@ -1,5 +1,5 @@
 {
-  "name": "@pollinations/mcp-server",
+  "name": "@lenylvt/pollinations-mcp",
   "displayName": "Pollinations AI",
   "version": "1.0.0",
   "description": "Generate stunning AI images and text using Pollinations AI. Support for multiple models including Flux, DALL-E style generation, Claude, GPT, and more.",
@@ -113,13 +113,7 @@
     }
   ],
   "models": {
-    "image": [
-      "flux",
-      "flux-realism",
-      "flux-anime",
-      "flux-3d",
-      "turbo"
-    ],
+    "image": ["flux", "flux-realism", "flux-anime", "flux-3d", "turbo"],
     "text": [
       "openai",
       "mistral",

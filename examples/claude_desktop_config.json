@@ -2,7 +2,7 @@
   "mcpServers": {
     "pollinations": {
       "command": "npx",
-      "args": ["-y", "@pollinations/mcp-server"]
+      "args": ["-y", "@lenylvt/pollinations-mcp"]
     }
   }
 }
