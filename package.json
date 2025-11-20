@@ -1,6 +1,6 @@
 {
   "name": "@lenylvt/pollinations-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Pollinations AI - Generate images and text using AI",
   "type": "module",
   "main": "dist/index.js",
