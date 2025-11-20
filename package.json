@@ -1,0 +1,47 @@
+{
+  "name": "@pollinations/mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Pollinations AI - Generate images and text using AI",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pollinations-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "pollinations",
+    "ai",
+    "image-generation",
+    "text-generation",
+    "model-context-protocol"
+  ],
+  "author": "Pollinations AI",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pollinations/mcp-server"
+  },
+  "mcp": {
+    "displayName": "Pollinations AI",
+    "description": "Generate stunning images and text with AI using Pollinations",
+    "categories": ["ai", "image-generation", "creative"],
+    "homepage": "https://pollinations.ai"
+  }
+}

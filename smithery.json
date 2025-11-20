@@ -1,0 +1,169 @@
+{
+  "name": "@pollinations/mcp-server",
+  "displayName": "Pollinations AI",
+  "version": "1.0.0",
+  "description": "Generate stunning AI images and text using Pollinations AI. Support for multiple models including Flux, DALL-E style generation, Claude, GPT, and more.",
+  "author": {
+    "name": "Pollinations AI",
+    "url": "https://pollinations.ai"
+  },
+  "homepage": "https://pollinations.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pollinations/mcp-server"
+  },
+  "license": "MIT",
+  "categories": [
+    "ai",
+    "image-generation",
+    "text-generation",
+    "creative",
+    "llm"
+  ],
+  "tags": [
+    "image-generation",
+    "text-generation",
+    "ai",
+    "pollinations",
+    "flux",
+    "stable-diffusion",
+    "gpt",
+    "claude",
+    "llama",
+    "creative-tools"
+  ],
+  "icon": "https://pollinations.ai/favicon.ico",
+  "screenshots": [
+    {
+      "url": "https://image.pollinations.ai/prompt/A%20stunning%20mountain%20landscape%20at%20sunset?width=1200&height=630&model=flux",
+      "caption": "AI-generated landscape using Flux model"
+    }
+  ],
+  "mcp": {
+    "transport": "stdio",
+    "configSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  "tools": [
+    {
+      "name": "generate_image",
+      "description": "Generate stunning AI images from text prompts using various models (Flux, Flux-Realism, Flux-Anime, Flux-3D, Turbo)",
+      "examples": [
+        {
+          "description": "Generate a realistic portrait",
+          "input": {
+            "prompt": "Professional headshot of a business person, studio lighting, high quality",
+            "model": "flux-realism",
+            "width": 512,
+            "height": 512
+          }
+        },
+        {
+          "description": "Create anime-style art",
+          "input": {
+            "prompt": "Anime character with blue hair in a magical forest",
+            "model": "flux-anime"
+          }
+        },
+        {
+          "description": "Generate 3D rendered image",
+          "input": {
+            "prompt": "Futuristic city with flying cars",
+            "model": "flux-3d",
+            "width": 1920,
+            "height": 1080
+          }
+        }
+      ]
+    },
+    {
+      "name": "generate_text",
+      "description": "Generate text using advanced AI language models including GPT, Claude, Mistral, and Llama",
+      "examples": [
+        {
+          "description": "Get coding assistance",
+          "input": {
+            "prompt": "Write a Python function to calculate fibonacci numbers",
+            "model": "qwen-2.5-coder-32b"
+          }
+        },
+        {
+          "description": "Research with web search",
+          "input": {
+            "prompt": "What are the latest developments in quantum computing?",
+            "model": "searchgpt"
+          }
+        },
+        {
+          "description": "Creative writing",
+          "input": {
+            "prompt": "Write a short poem about nature",
+            "model": "claude-3.5-sonnet",
+            "temperature": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "name": "get_available_models",
+      "description": "Get a comprehensive list of all available AI models for both image and text generation"
+    }
+  ],
+  "models": {
+    "image": [
+      "flux",
+      "flux-realism",
+      "flux-anime",
+      "flux-3d",
+      "turbo"
+    ],
+    "text": [
+      "openai",
+      "mistral",
+      "mistral-large",
+      "claude-3.5-sonnet",
+      "llama-3.3-70b",
+      "qwen-2.5-coder-32b",
+      "searchgpt"
+    ]
+  },
+  "features": [
+    "Free AI image generation",
+    "Multiple image models (realistic, anime, 3D)",
+    "Text generation with top LLMs",
+    "No API key required",
+    "Customizable image dimensions",
+    "Reproducible results with seed control",
+    "Temperature control for text generation",
+    "Search-augmented generation"
+  ],
+  "documentation": {
+    "quickstart": "Install with: npx @smithery/cli install @pollinations/mcp-server --client claude",
+    "apiReference": "https://pollinations.ai/docs",
+    "examples": "https://github.com/pollinations/mcp-server#usage-examples"
+  },
+  "support": {
+    "issues": "https://github.com/pollinations/mcp-server/issues",
+    "discord": "https://smithery.ai/discord"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "image-generation",
+    "text-generation",
+    "pollinations",
+    "flux",
+    "gpt",
+    "claude",
+    "mistral",
+    "llama",
+    "stable-diffusion",
+    "dalle",
+    "creative-ai",
+    "generative-ai"
+  ]
+}
